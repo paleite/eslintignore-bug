@@ -5,8 +5,8 @@
   "license": "MIT",
   "author": "Patrick Eriksson <paleite@users.noreply.github.com> (https://github.com/paleite)",
   "scripts": {
-    "lint-absolute": "eslint --ignore-path .list-of-ignored-files package-a/",
-    "lint-relative": "cd package-a && eslint --ignore-path ../.list-of-ignored-files ."
+    "lint-absolute": "eslint --config $(git rev-parse --show-toplevel)/.eslintrc.js --ignore-path $(git rev-parse --show-toplevel)/.list-of-ignored-files package-a/",
+    "lint-relative": "cd package-a/ && eslint --config $(git rev-parse --show-toplevel)/.eslintrc.js --ignore-path $(git rev-parse --show-toplevel)/.list-of-ignored-files ."
   },
   "devDependencies": {
     "eslint": "^7.30.0"
