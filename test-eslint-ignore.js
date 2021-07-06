@@ -1,1 +1,0 @@
-const { CLIEngine } = require("eslint");

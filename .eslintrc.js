@@ -1,15 +1,5 @@
-console.log(`cwd: ${JSON.stringify(process.cwd())}`);
-
 module.exports = {
-  root: true,
-  env: {
-    browser: true,
-    es2021: true,
-  },
+  env: { es6: true, jest: true, node: true },
   extends: "eslint:recommended",
-  parserOptions: {
-    ecmaVersion: 12,
-    sourceType: "module",
-  },
-  rules: {},
+  root: true,
 };
