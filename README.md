@@ -1,7 +1,7 @@
 # Steps to reproduce
 
 ```sh
-npm install # Install modules
+npm install           # Install modules
 npm run lint-absolute # Starts ESLint from the git root folder and uses the ignore-file from the git root folder
 npm run lint-relative # Starts ESLint from a subfolder and uses the ignore-file from the git root folder
 ```
