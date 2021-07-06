@@ -9,7 +9,7 @@
     "eslint": "^7.30.0"
   },
   "scripts": {
-    "lint-global": "eslint --ignore-path .list-of-ignored-files packages/package-a/__tests__",
-    "lint-local": "cd packages/package-a && eslint --ignore-path ../../.list-of-ignored-files __tests__"
+    "lint-global": "eslint --ignore-path .list-of-ignored-files package-a/__tests__",
+    "lint-local": "cd package-a && eslint --ignore-path ../.list-of-ignored-files __tests__"
   }
 }
